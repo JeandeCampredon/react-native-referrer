@@ -26,12 +26,20 @@
   	```
       compile project(':react-native-referrer')
   	```
+4. Insert the following lines inside the application block in `android/app/src/main/AndroidManifest.xml`:
+  	```
+      <receiver android:name="com.jdc.reactlibrary.ReferrerReceiver" android:exported="true">
+        <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER" />
+        </intent-filter>
+    	</receiver>
+  	```
 
 
 ## Usage
 ```javascript
 import RNReferrer from 'react-native-referrer';
 
-// TODO: What to do with the module?
-RNReferrer;
+...
+const referer = await RNReferrer.getReferrer();
 ```
