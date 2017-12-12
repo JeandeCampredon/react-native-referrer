@@ -1,7 +1,6 @@
 
 package com.jdc.reactlibrary;
 
-import android.os.Bundle;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -19,9 +18,7 @@ public class ReferrerReceiver extends BroadcastReceiver {
 
   @Override
   public void onReceive(Context context, Intent intent) {
-    Bundle extras = intent.getExtras();
-    String referrerString = extras.getString("referrer");
-
+    String referrerString = intent.getStringExtra("referrer");
     setReferrer(referrerString);
   }
 }
