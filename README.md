@@ -14,19 +14,19 @@
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.jdc.reactlibrary.RNReferrerPackage;` to the imports at the top of the file
-  - Add `new RNReferrerPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
+1.  Open up `android/app/src/main/java/[...]/MainActivity.java`
+-   Add `import com.jdc.reactlibrary.RNReferrerPackage;` to the imports at the top of the file
+-   Add `new RNReferrerPackage()` to the list returned by the `getPackages()` method
+2.  Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-referrer'
   	project(':react-native-referrer').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-referrer/android')
   	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+3.  Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
       compile project(':react-native-referrer')
   	```
-4. Insert the following lines inside the application block in `android/app/src/main/AndroidManifest.xml`:
+4.  Insert the following lines inside the application block in `android/app/src/main/AndroidManifest.xml`:
   	```
       <receiver android:name="com.jdc.reactlibrary.ReferrerReceiver" android:exported="true">
         <intent-filter>
