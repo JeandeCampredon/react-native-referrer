@@ -24,15 +24,15 @@
   	```
 3.  Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-referrer')
+  	compile project(':react-native-referrer')
   	```
 4.  Insert the following lines inside the application block in `android/app/src/main/AndroidManifest.xml`:
-  	```
-      <receiver android:name="com.jdc.reactlibrary.ReferrerReceiver" android:exported="true">
-        <intent-filter>
+  	```xml
+  	<receiver android:name="com.jdc.reactlibrary.ReferrerReceiver" android:exported="true">
+      <intent-filter>
         <action android:name="com.android.vending.INSTALL_REFERRER" />
-        </intent-filter>
-    	</receiver>
+      </intent-filter>
+    </receiver>
   	```
 
 
