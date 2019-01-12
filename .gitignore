@@ -8,7 +8,7 @@
 node_modules/
 npm-debug.log
 yarn-error.log
-  
+
 
 # Android/IntelliJ
 #
@@ -22,4 +22,6 @@ local.properties
 buck-out/
 \.buckd/
 *.keystore
-      
+
+#badges
+.badges.json

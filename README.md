@@ -1,6 +1,13 @@
 
 # react-native-referrer
 
+<!-- badge -->
+[![npm version](https://img.shields.io/npm/v/react-native-referrer.svg)](https://www.npmjs.com/package/react-native-referrer)
+[![npm license](https://img.shields.io/npm/l/react-native-referrer.svg)](https://www.npmjs.com/package/react-native-referrer)
+[![npm download](https://img.shields.io/npm/dm/react-native-referrer.svg)](https://www.npmjs.com/package/react-native-referrer)
+[![npm download](https://img.shields.io/npm/dt/react-native-referrer.svg)](https://www.npmjs.com/package/react-native-referrer)
+<!-- endbadge -->
+
 ## Getting started
 
 `$ npm install react-native-referrer --save`
