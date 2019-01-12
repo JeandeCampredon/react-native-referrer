@@ -17,7 +17,7 @@
     "play store"
   ],
   "author": "",
-  "license": "",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   },
