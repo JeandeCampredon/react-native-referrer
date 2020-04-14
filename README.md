@@ -50,3 +50,10 @@ import RNReferrer from 'react-native-referrer';
 ...
 const referer = await RNReferrer.getReferrer();
 ```
+
+## Testing
+Run `adb shell` and type
+```
+am broadcast -a com.android.vending.INSTALL_REFERRER -n your.package.id/com.jdc.reactlibrary.ReferrerReceiver --es "referrer" "my-referrer"
+```
+Replace `your.package.id` and `my-referrer` with yours
